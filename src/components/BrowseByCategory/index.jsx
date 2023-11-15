@@ -6,7 +6,8 @@ export default function BrowseByCategory() {
 
             <BrowseTitle />
             <Box sx={{ width: '100%', height: '100%', margin: '5px', overflow: 'auto' }}>
-                <Stack direction="row" spacing={2}>
+                <Stack direction="row" spacing={2}
+                    sx={{width: "fit-content"}}>
 
                     <BrowseCardStrip />
 
