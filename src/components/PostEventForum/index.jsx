@@ -8,7 +8,7 @@ export default function PostEventForum(){
         <Stack direction="column"spacing={2} sx={{ width: '100%', height: '100%', margin: '5px' }} >
         {/* <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' , height: '300px'}}> */}
             <Title/>
-            <Box sx={{ width: '100%', height: '100%' ,margin:'5px', overflow:'auto'}}>    
+            <Box  className="hide-scroll"  sx={{ width: '100%', height: '100%' ,margin:'5px', overflow:'auto'}}>    
                 <Stack direction="row" spacing={2}>
                     <Picture imgsrc='src\assets\react.svg'/>
                     <Picture imgsrc='src\assets\react.svg'/>
