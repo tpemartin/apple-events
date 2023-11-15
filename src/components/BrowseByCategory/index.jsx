@@ -1,10 +1,11 @@
 import { Paper, Stack, Typography, Box } from "@mui/material"
+import "./index.css"
 
 export default function BrowseByCategory() {
     return <>
         <Stack direction="column" spacing={2} sx={{ width: '100%', height: '100%', margin: '5px' }}>
             <BrowseTitle />
-            <Box sx={{ width: '100%', height: '100%', margin: '5px', overflow: 'auto' }}> 
+            <Box className="hide-scroll" sx={{ width: '100%', height: '100%', margin: '5px', overflow: 'auto' }}> 
                 <Stack direction="row" spacing={2}
                     sx={{ 
                         width: "fit-content" }}>
@@ -33,7 +34,7 @@ function BrowseCardStrip() {
 
 function BrowseTitle({ title = "Browse by Category" }) {
     return <>
-        <Typography variant="h4">
+        <Typography variant="h5">
             {title}
         </Typography>
     </>
@@ -42,7 +43,7 @@ function BrowseCard({ category = "Kids & Family" }) {
     return <>
         <Paper sx={{
             position: "relative",
-            width: "200px", height: "200px", margin: "10px"
+            width: "365px", height: "120px", margin: "10px"
         }}>
 
             <Typography variant="h6"
