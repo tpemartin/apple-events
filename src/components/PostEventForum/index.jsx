@@ -1,17 +1,28 @@
 import { Stack, Typography } from "@mui/material"
 import {Box} from "@mui/material"
+import Paper from '@mui/material/Paper';
 
 export default function PostEventForum(){
     return (
     <>
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' , height: '300px', backgroundColor:'black' }}>
-            <Stack direction={'column'} spacing={2} sx={{overflow:'auto'}}>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' , 
+                    height: '300px', backgroundColor:'black', margin:'10px', border:'5px',
+                    overflow:'auto'}}>
+            <Stack direction={'column'} spacing={2}>
                 <Title/>
-                <Stack direction="row" spacing={2} sx={{overflow:'auto'}}>
+                <Stack direction="row" spacing={2}>
                     <Picture imgsrc="src\assets\react.svg"/>
                     <Picture imgsrc="src\assets\react.svg"/>
                     <Picture imgsrc="src\assets\react.svg"/>
                     <Picture imgsrc="src\assets\react.svg"/>
+                    <Picture imgsrc="src\assets\react.svg"/>
+                    <Picture imgsrc="src\assets\react.svg"/>
+                    <Picture imgsrc="src\assets\react.svg"/>
+                    <Picture imgsrc="src\assets\react.svg"/>
+                    <Picture imgsrc="src\assets\react.svg"/>
+                    <Picture imgsrc="src\assets\react.svg"/>
+                    <Picture imgsrc="src\assets\react.svg"/>
+
                 </Stack>
             </Stack>
         </Box>
@@ -37,8 +48,8 @@ function Title(){
 function Picture({imgsrc}){
     return (
         <> 
-            <Box sx={{ width: '100%', height: '100%', backgroundColor:'white'}}>
-                <img src={imgsrc} height={'150px'}/>
+            <Box sx={{ width: '100%', height: '100%', backgroundColor:'white', borderRadius:"15%"}}>
+                    <img src={imgsrc} height={'150px'}/>
             </Box>
         </>
     )
