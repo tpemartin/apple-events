@@ -5,26 +5,25 @@ import Paper from '@mui/material/Paper';
 export default function PostEventForum(){
     return (
     <>
-        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' , 
-                    height: '300px', backgroundColor:'black', margin:'10px', border:'5px',
-                    overflow:'auto'}}>
-            <Stack direction={'column'} spacing={2}>
-                <Title/>
+        <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' , height: '300px', backgroundColor:'black' }}>
+            <Title/>
+            <Box sx={{ width: '100%', height: '100%', backgroundColor:'black' ,margin:'5px', overflow:'auto'}}>    
                 <Stack direction="row" spacing={2}>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
-                    <Picture imgsrc="src\assets\react.svg"/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
+                    <Picture imgsrc='src\assets\react.svg'/>
 
                 </Stack>
-            </Stack>
+            </Box>
         </Box>
     </>
     )
