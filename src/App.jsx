@@ -13,13 +13,14 @@ function App() {
 
   return (
     <>
-      <Stack direction="column">
+      {/* <Stack direction="column">
         <AppBar />
         <EventHero />
         <TopChartEvent />
         <BrowseByCategory />
         <PostEventForum/>
-      </Stack>
+      </Stack> */}
+      <EventHero/>
      </>
   )
 }
